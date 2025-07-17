@@ -42,4 +42,4 @@ Open `index.html` in any modern web browser.
 - **Varadesh J**  
 - **Vinayak K**  
 
-🔗 **GitHub Profile:** [Latesh Shetty](https://github.com/Lateshshetty)
+🔗 **GitHub Profile:** [Varadesh Jangali](https://github.com/varadeshjangali/College-Inquery-Chatbot/edit/main/README.md)
