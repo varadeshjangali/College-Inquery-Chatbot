@@ -1,0 +1,410 @@
+html,body{
+    height: 100%;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('images/image.jpg');
+    background-repeat: no-repeat;
+    background-size: 100em 47em;
+    
+  }
+  
+a{
+    font-size: 14px;
+         color: blueviolet;
+         cursor: pointer;
+         font-weight: 500;
+         background: white;
+         font-weight: bold;
+         border: none;
+}
+button{
+    font-size: 14px;
+         color: blueviolet;
+         cursor: pointer;
+         font-weight: 500;
+         background: white;
+         font-weight: bold;
+         border: none;
+}
+#init {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background: indianred;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    color: aliceblue;
+    cursor: pointer;
+}
+.desc p{
+    color: white;
+    margin: 0;
+    font-weight: 600;
+}
+.text{
+    font-size: 65px;
+    font-weight: 800;
+    color: cadetblue;
+    margin: 0;
+}
+.parent{
+    position: relative;
+    height: 100%;
+    padding: 0 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bot-img{
+    width: 20rem;
+    height: 20rem;
+}
+.child{
+    box-shadow: 0 0 2px salmon;
+    border-radius: 15px;
+    height: 40em;
+    
+    margin: auto;
+    background: white;
+}
+.header img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin: 0 0.5rem;
+    border: 1px solid rgb(231,231,231);
+    padding: 5px;
+}
+.header{
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid whitesmoke;
+    background: white;
+    right: 55px;
+    width: 57.5em;
+    padding: 5px 0;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    z-index: 1;
+    box-shadow: 0 0 2px rgb(175,175,175);
+}
+.h-child{
+    display: flex;
+    align-items: center;
+}
+.header span{
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+}
+.pico{
+    width: 50px;
+    height: 50px;
+    
+}
+.refBtn{
+    position: absolute;
+    bottom: 0.2rem;
+    right: 0.5rem;
+    background: none;
+    border: none;
+    border-radius: 70%;
+    color: indianred;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+.name{
+    font-weight: 600;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 65.75em;
+    background: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: indianred;
+    padding: 15px 0;
+    text-align: center;
+    right: 55px;
+    font-size: 14px;
+    box-shadow: 0 0 3px rgb(153,153,153);
+}
+#chat-box{
+    position: absolute;
+    top: 40px;
+    right: 55px;
+    padding: 8px 10px;
+    font-size: 12px;
+    height: 45em;
+    overflow: auto;
+    background: rgb(224,241,253);
+    text-align: center;
+    width: 75em;
+}
+
+/* these classes will be used in javascript file */
+.msg{
+    background: white;
+    padding: 5px 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: max-content;
+    font-size: 14px;
+    color: lightslategrey;
+    box-shadow: 0 0 5px rgb(226,226,226);
+    max-width: 65%;
+    text-align: left;
+}
+.test{
+    text-align: right;
+    margin: 20px 0;
+}
+.rep{
+    background: rgb(253,243,224);
+    color: lightslategray;
+    padding: 5px 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    font-size: 14px;
+    box-shadow: 0 0 5px rgb(211,211,211);
+}
+.opt{
+    padding: 5px 20px;
+    columns: lightsalmon;
+    border: 1px solid blueviolet;
+    border-radius: 1rem;
+    margin: 0.3rem 0.5rem;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: 500;
+    background: white;
+    text-align: center;
+    font-size: 14px;
+    color: blueviolet;
+}
+.link{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    color: aliceblue !important;
+    background: blueviolet;
+}
+.m-link{
+    text-decoration: none;
+}
+.link:active{
+    background: white;
+    border: 1px solid blueviolet;
+    color: blueviolet;
+}
+.back-btn {
+    background: indianred;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: inline-block;
+}
+/* General styling for small screens */
+@media (max-width: 768px) {
+    /* Center the chat screen */
+    .child {
+        width: 90%;
+        height: 80vh;
+        margin: 0 auto;
+    }
+
+    /* Style adjustments for header and chat area */
+    .header {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    #chat-box {
+        height: 65vh;
+        overflow-y: auto;
+        width: 100%;
+    }
+    
+    .footer {
+        width: 100%;
+    }
+
+    /* Adjust font sizes for smaller screens */
+    .text {
+        font-size: 32px;
+    }
+    #init {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+    .msg, .rep, .opt {
+        font-size: 12px;
+    }
+
+    /* Ensure the back button and chat options are also responsive */
+    .opt {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+    .back-btn {
+        font-size: 12px;
+    }
+}
+
+/* Specific styling for very small screens (320px wide) */
+@media (max-width: 480px) {
+    /* Further reduce chat screen size */
+    .child {
+        width: 100%;
+        height: 70vh;
+        margin: 0 auto;
+    }
+    
+    #chat-box {
+        height: 55vh;
+    }
+    
+    .header, .footer {
+        padding: 8px;
+    }
+}
+
+/* Styling specifically for screens as small as 320x480 */
+@media (max-width: 320px) {
+    /* Adjust the chatbot window dimensions */
+    .child {
+        width: 100%;
+        height: 70vh;
+        margin: 0 auto;
+    }
+    
+    #chat-box {
+        height: 50vh;
+        padding: 5px; /* Reduced padding to save space */
+        font-size: 10px;
+    }
+    
+    /* Minimize padding and font sizes */
+    .header {
+        width: 100%;
+        padding: 5px;
+    }
+    
+    .footer {
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    /* Reduced font sizes for text and buttons */
+    .text {
+        font-size: 24px;
+        padding: 0;
+    }
+
+    #init {
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+
+    /* Adjust message and option styles */
+    .msg, .rep, .opt {
+        font-size: 10px;
+        padding: 4px 8px;
+    }
+
+    /* Styling for the back button */
+    .back-btn {
+        font-size: 10px;
+        padding: 4px 8px;
+    }
+
+    /* Keep chatbot centered with sufficient padding */
+    .parent {
+        padding: 0 1rem;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .desc {
+        margin-bottom: 10px;
+    }
+}
+
+.hod-image {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.branch-info {
+    font-size: 14px;
+    font-weight: 500;
+    color: lightslategrey;
+    margin: 10px 0;
+}
+
+.msg strong {
+    color: #333;
+}
+.staff-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
+    gap: 20px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+.staff-grid img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.staff-grid .staff-card {
+    text-align: center;
+}
+
+.staff-grid .staff-card b {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.staff-grid .staff-card p {
+    font-size: 12px;
+    color: #555;
+}
+#but{
+    
+    text-align: center;
+    font-size: 14px;
+    color: blueviolet;
+    cursor: pointer;
+    font-weight: 500;
+    background: white;
+    font-weight: bold;
+    border: none;
+}
+
+button:focus {
+    outline: none; /* Removes the focus outline */
+}
+
+
