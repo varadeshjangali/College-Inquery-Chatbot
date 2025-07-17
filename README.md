@@ -1,6 +1,6 @@
 # 🤖 College Inquiry Chatbot
 
-Hosted Link : https://lateshshetty.github.io/Collage-Inquery-Chatbot/
+Hosted Link : https://github.com/varadeshjangali/College-Inquery-Chatbot/edit/main/README.md
 
 🚀 **An interactive chatbot providing instant college-related information**
 
