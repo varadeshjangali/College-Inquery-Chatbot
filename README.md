@@ -1,6 +1,6 @@
 # 🤖 College Inquiry Chatbot
 
-Hosted Link : https://github.com/varadeshjangali/College-Inquery-Chatbot/edit/main/README.md
+Hosted Link : https://github.com/varadeshjangali/College-Inquery-Chatbot/
 
 🚀 **An interactive chatbot providing instant college-related information**
 
@@ -42,4 +42,4 @@ Open `index.html` in any modern web browser.
 - **Varadesh J**  
 - **Vinayak K**  
 
-🔗 **GitHub Profile:** [Varadesh Jangali](https://github.com/varadeshjangali/College-Inquery-Chatbot/edit/main/README.md)
+🔗 **GitHub Profile:** [Varadesh Jangali](https://github.com/varadeshjangali/College-Inquery-Chatbot/)
